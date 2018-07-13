@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bullet.recipesearch">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/chefhat"
+        android:label="Recipe Nation"
+        android:roundIcon="@drawable/chefhat"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainRecipe"
+            android:label="Recipes Nation"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RecipeActivity"
+            android:label="Recipe Items"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".specificrecipe"
+            android:label="@string/title_activity_specificrecipe"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".how2prep" />
+        <activity
+            android:name=".Saved_Recipes"
+            android:label="Saved Recipes"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".OFLINE_RECIPE"
+            android:label="recipe"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <provider
+            android:authorities="com.android.recipesearch"
+            android:name=".data.RecipeProvider"
+            android:exported="false"/>
+    </application>
+
+</manifest>

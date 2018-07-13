@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.bullet.recipesearch.MainRecipe"
+    tools:showIn="@layout/activity_main_recipe"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/Search_item"
+        android:background="#CFD8DC"
+        android:hint="  Search your Recipe here (*)"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/complete_no_of_recipes"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="7dp"
+        android:background="#CFD8DC"
+        android:hint="  No of Recipes (*)" />
+
+    <AutoCompleteTextView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#CFD8DC"
+        android:layout_marginTop="7dp"
+        android:id="@+id/complete_diet"
+        android:hint="  Enter your Diet here (optional)"
+        />
+
+    <AutoCompleteTextView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#CFD8DC"
+        android:layout_marginTop="7dp"
+        android:id="@+id/health_item"
+        android:hint="  Health (optional)"/>
+    <EditText
+        android:visibility="gone"
+        android:layout_marginTop="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/Calories_from"
+        android:background="#CFD8DC"
+        android:hint="  Calories from (optional)"
+        />
+    <EditText
+        android:visibility="gone"
+        android:layout_marginTop="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/Calories_to"
+        android:background="#CFD8DC"
+        android:hint="  Calories to (optional)"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="search"
+            android:textColor="#FFFFFF"
+            android:onClick="search"
+            android:layout_margin="10dp"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/search_button"
+            android:background="@drawable/layout_bg"/>
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="34dp"
+            android:text="Filters"
+            android:textSize="24dp"
+            android:layout_margin="10dp"
+            android:layout_toLeftOf="@id/filters"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+        <Switch
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="Off"
+            android:textColor="#FFFFFF"
+            android:textOn="On"
+            android:layout_margin="10dp"
+            android:id="@+id/filters"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

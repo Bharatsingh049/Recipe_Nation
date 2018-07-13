@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Recipe Search</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_new_recipe">NewRecipe</string>
+    <string name="title_activity_recipe">RecipeActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_specificrecipe">specificrecipe</string>
+    <string name="title_activity_saved__recipes">Saved_Recipes</string>
+    <string name="title_activity_ofline__recipe">OFLINE_RECIPE</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.bullet.recipesearch.Saved_Recipes"
+    tools:showIn="@layout/activity_saved__recipes">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/downloaded_Recipes"
+        android:scrollbars="vertical"
+        android:background="@drawable/recipe_layout_br"
+        android:scrollbarStyle="insideOverlay"
+        android:fastScrollAlwaysVisible="true"
+        android:hint="saved Recipes"/>
+
+
+</LinearLayout>
